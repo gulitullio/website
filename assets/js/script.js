@@ -38,10 +38,10 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
   testimonialsItem[i].addEventListener("click", function () {
 
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    //modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    //modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    //modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    //modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
 
     testimonialsModalFunc();
 
@@ -147,11 +147,11 @@ for (let i = 0; i < navigationLinks.length; i++) {
     for (let i = 0; i < pages.length; i++) {
       if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
         pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
+        if (navigationLinks[i]) navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
       } else {
         pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        if (navigationLinks[i]) navigationLinks[i].classList.remove("active");
       }
     }
 

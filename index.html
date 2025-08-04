@@ -42,7 +42,7 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Tullio Gulì" width="80">
+          <img src="./assets/images/my-avatar.jpg" alt="Tullio Gulì" width="80">
         </figure>
 
         <div class="info-content">
@@ -126,30 +126,6 @@
 
         <div class="separator"></div>
 
-        <!--
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-      -->
-
       </div>
 
     </aside>
@@ -177,11 +153,11 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Skills</button>
+            <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link>Skills</button>
           </li>
 
           <li class="navbar-item">
@@ -191,11 +167,11 @@
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Links</button>
           </li>
-
+      <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
-
+      -->
         </ul>
 
       </nav>
@@ -244,8 +220,17 @@
           <p>
             And here we are, trying something new to help me grow further.
           </p>
+
+          <section class="links-text">
+            <p>
+              <a href="./assets/pdf/CV Tullio Guli (2025).pdf" target="_blank">CV Tullio Guli (2025).pdf</a>
+            </p>
+          </section>
         </section>
 
+
+
+        
         <!--
           - service
         -->
@@ -354,16 +339,17 @@
           <ul>
 
             <li class="testimonials-item">
-              <div class="content-card " data-testimonials-item>
+              <div class="content-card" data-testimonials-item>
 
                 <h4 class="h4 testimonials-item-title" data-testimonials-title>Interior design software thesis</h4>
 
-                <div class="testimonials-text " data-testimonials-text>
+                <iframe width="320" height="160" src="https://www.youtube.com/embed/3-1qUrz80BI?si=Gq0ewh8UH59rRrLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <br>
+
+                <div class="testimonials-text" data-testimonials-text>
                   <p>
                     At University of Perugia I developed a Java 3D project called “interior design software” where it
-                    is
-                    possible to plan any room of the house. The user can also add additional furniture to the plan and
-                    in real time the software renders the room with the added components.
+                    is possible to plan any room of the house. <u>More</u>
                   </p>
                 </div>
 
@@ -382,28 +368,37 @@
 
           <div class="overlay" data-overlay></div>
 
-
           <section class="testimonials-modal">
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
             </button>
 
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="TITLE" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/svg/icon-quote.svg" alt="quote icon">
-            </div>
 
             <div class="modal-content">
 
-              <h4 class="h3 modal-title" data-modal-title>TITLE</h4>
+              <h4 class="h3 modal-title" data-modal-title>Interior design software thesis</h4>
 
-              <time datetime="2024-11-11">2024-11-11</time>
+              <time>2009 - 2010</time>
+
+              <br>
+              <iframe width="620" height="300" src="https://www.youtube.com/embed/3-1qUrz80BI?si=Gq0ewh8UH59rRrLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <br><br>
 
               <div data-modal-text>
+                <p>
+                  At University of Perugia I developed a Java 3D project called “interior design software” where it
+                  is possible to plan any room of the house. The user can also add additional furniture to the plan and
+                  in real time the software renders the room with the added components.
+                </p>
               </div>
+
+
+
+              <section class="links-text">
+                <p><br>
+                  <a href="./assets/pdf/Interior design software thesis.pdf" target="_blank">Interior design software thesis.pdf</a>
+                </p>
+              </section>
 
             </div>
           </section>
@@ -415,146 +410,6 @@
         </section>
 
       </article>
-
-
-      <!--
-        - #SKILLS
-      -->
-
-      <article class="skills" data-page="skills">
-
-        <header>
-          <h2 class="h2 article-title">Skills</h2>
-        </header>
-
-        <section class="skills-text">
-          <h2>About software development</h2>
-          <ul>
-            <li>Experience client side with C#, C++</li>
-            <li>Experience server side with Typescript and Javascript</li>
-            <li>Experience with game development platform such as Unity and familiar with Unreal Engine</li>
-            <li>Experience with game data service like GameSparks or Beamable</li>
-            <li>Experience with mobile technologies: Android, Intel XDK Cordova (Hybrid Apps)</li>
-            <li>Experience with Git and SVN</li>
-            <li>Familiar with Microsoft XNA and .NET, iOS and OpenGL</li>
-          </ul>
-          <hr>
-          <h2>About website development</h2>
-          <ul>
-            <li>UI development experience using HTML5, CSS3, JQuery and Ajax</li>
-            <li>Experience with PHP and open source frameworks such as Drupal or Wordpress</li>
-            <li>Experience with PHP RESTful web service</li>
-            <li>Knowledge of database systems like MySQL and familiar with SQL Server</li>
-            <li>Familiar with Bootstrap and AngularJS</li>
-          </ul>
-          <hr>
-          <h2>Personal skill</h2>
-          <ul>
-            <li>Highly passionate to develop and deliver games for any genre</li>
-            <li>Analytical, problem solving and organizational skills</li>
-            <li>Always open to other ideas in order to achieve the best solution as part of the team</li>
-            <li>Ability to learn and investigate new areas independently</li>
-            <li>Willing to expand my knowledge base and acquire new skills</li>
-          </ul>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Unity (C#)</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Typescript</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Beamable</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">GameSparks</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Website development (HTML5, CSS3, PHP, Javascript, JQuery, Ajax, MySQL)</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C++</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Unreal Engine</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 25%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
 
 
       <!--
@@ -582,9 +437,9 @@
             <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Gamindo</h4>
-              <h4 class="h4 timeline-item-subtitle">Full remote game developer, Perugia, Italy</h4>
+              <h4 class="h4 timeline-item-subtitle">Game developer, Full remote, Perugia, Italy</h4>
 
-              <span>2023 - 2024</span>
+              <span>2023 - 2025</span>
 
               <p class="timeline-text">
                 Gamindo ia a company that develops video games for brands whose goal is to bring video games to every
@@ -598,6 +453,22 @@
                   Shield</a><br>
                 - <a target="_blank"
                   href="https://www.gamindo.com/multiplayer-employee-engagement-games/">PlayJam</a><br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High Stone Games</h4>
+              <h4 class="h4 timeline-item-subtitle">Game developer, Full remote, Perugia, Italy</h4>
+
+              <span>2022</span>
+
+              <p class="timeline-text">
+                High Stone Games is a small independent Italian studio. Their preferred gameplay style is 2D with cartoon graphics, fast-paced gameplay, and is primarily developed in Unity.<br>
+                With them, I developed Star Bugs, a universe full of fascinating creatures born of the desire to create a new and fun way to interact with collectible NFTs.<br>
+                The gameplay, based on idle mechanics and turn-based card games, allows the user to breed, collect and fight their insects in a real internal ecosystem.<br>
+                - <a target="_blank" href="https://highstonegames.com/games/star_bugs/">StarBugs</a><br>
               </p>
 
             </li>
@@ -739,7 +610,146 @@
       </article>
 
 
+      <!--
+        - #SKILLS
+      -->
 
+      <article class="skills" data-page="skills">
+
+        <header>
+          <h2 class="h2 article-title">Skills</h2>
+        </header>
+
+        <section class="skills-text">
+          <h2>About software development</h2>
+          <ul>
+            <li>Experience client side with C#, C++</li>
+            <li>Experience server side with Typescript and Javascript</li>
+            <li>Experience with game development platform such as Unity and familiar with Unreal Engine</li>
+            <li>Experience with game data service like GameSparks or Beamable</li>
+            <li>Experience with mobile technologies: Android, Intel XDK Cordova (Hybrid Apps)</li>
+            <li>Experience with Git and SVN</li>
+            <li>Familiar with Microsoft XNA and .NET, iOS and OpenGL</li>
+          </ul>
+          <hr>
+          <h2>About website development</h2>
+          <ul>
+            <li>UI development experience using HTML5, CSS3, JQuery and Ajax</li>
+            <li>Experience with PHP and open source frameworks such as Drupal or Wordpress</li>
+            <li>Experience with PHP RESTful web service</li>
+            <li>Knowledge of database systems like MySQL and familiar with SQL Server</li>
+            <li>Familiar with Bootstrap and AngularJS</li>
+          </ul>
+          <hr>
+          <h2>Personal skill</h2>
+          <ul>
+            <li>Highly passionate to develop and deliver games for any genre</li>
+            <li>Analytical, problem solving and organizational skills</li>
+            <li>Always open to other ideas in order to achieve the best solution as part of the team</li>
+            <li>Ability to learn and investigate new areas independently</li>
+            <li>Willing to expand my knowledge base and acquire new skills</li>
+          </ul>
+
+        </section>
+
+        <br><hr><br>
+
+        <section class="skill">
+
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unity (C#)</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Typescript</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Beamable</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GameSparks</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Website development (HTML5, CSS3, PHP, Javascript, JQuery, Ajax, MySQL)</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">C++</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Unreal Engine</h5>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 25%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
 
 
       <!--
@@ -1071,11 +1081,21 @@
         <section class="links-text">
           <h2>Manage projects and teams</h2>
           <p>
+            Jira<br>
+            <a href="https://www.atlassian.com/software/jira" target="_blank">https://www.atlassian.com/software/jira</a>
+          </p>
+          <p>
             Asana<br>
             <a href="https://asana.com/" target="_blank">https://asana.com/</a>
           </p>
+          <hr>
+          <h2>Version control system</h2>
           <p>
-            Bitbucket<br>
+            Git<br>
+            <a href="https://github.com/" target="_blank">https://github.com/</a>
+          </p>
+          <p>
+            BitBucket<br>
             <a href="https://bitbucket.org/product/" target="_blank">https://bitbucket.org/product/</a>
           </p>
           <hr>
@@ -1139,10 +1159,6 @@
           <p>
             General information about the C++<br>
             <a href="http://www.cplusplus.com/" target="_blank">http://www.cplusplus.com/</a>
-          </p>
-          <p>
-            Visual C++ Documentation<br>
-            <a href="https://docs.microsoft.com/en-us/cpp/" target="_blank">https://docs.microsoft.com/en-us/cpp/</a>
           </p>
           <p>
             Tutorials<br>
