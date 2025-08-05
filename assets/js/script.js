@@ -52,6 +52,7 @@ const modalProjectsOverlay = document.querySelector("[data-modal-projects-overla
 // modal variable
 const modalProjectsImg = document.querySelector("[data-modal-projects-img]");
 const modalProjectsTitle = document.querySelector("[data-modal-projects-title]");
+const modalProjectsCompany = document.querySelector("[data-modal-projects-company]");
 const modalProjectsMade = document.querySelector("[data-modal-projects-made]");
 const modalProjectsTime = document.querySelector("[data-modal-projects-time]");
 const modalProjectsTeam = document.querySelector("[data-modal-projects-team]");
@@ -69,6 +70,7 @@ for (let i = 0; i < projectsItem.length; i++) {
   projectsItem[i].addEventListener("click", function () {
     const imgSrc = this.querySelector("[data-projects-img]").src;
     const title = this.querySelector("[data-projects-title]").innerHTML;
+    const company = this.querySelector("[data-projects-company]").innerHTML;
     const made = this.querySelector("[data-projects-made]").innerHTML;
     const time = this.querySelector("[data-projects-time]").innerHTML;
     const team = this.querySelector("[data-projects-team]").innerHTML;
@@ -76,6 +78,7 @@ for (let i = 0; i < projectsItem.length; i++) {
 
     modalProjectsImg.src = imgSrc;
     modalProjectsTitle.innerHTML = title;
+    modalProjectsCompany.innerHTML = company;
     modalProjectsMade.innerHTML = made;
     modalProjectsTime.innerHTML = time;
     modalProjectsTeam.innerHTML = team;
