@@ -54,6 +54,51 @@ modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
 
+// project variables
+const projectsItem = document.querySelectorAll("[data-projects-item]");
+const modalProjectsContainer = document.querySelector("[data-modal-projects-container]");
+const modalProjectsCloseBtn = document.querySelector("[data-modal-projects-close-btn]");
+const modalProjectsOverlay = document.querySelector("[data-modal-projects-overlay]");
+
+// modal variable
+const modalProjectsImg = document.querySelector("[data-modal-projects-img]");
+const modalProjectsTitle = document.querySelector("[data-modal-projects-title]");
+const modalProjectsMade = document.querySelector("[data-modal-projects-made]");
+const modalProjectsTime = document.querySelector("[data-modal-projects-time]");
+const modalProjectsText = document.querySelector("[data-modal-projects-text]");
+
+// modal toggle function
+const projectsModalFunc = function () {
+  modalProjectsContainer.classList.toggle("active");
+  modalProjectsOverlay.classList.toggle("active");
+}
+
+// add click event to all modal items
+for (let i = 0; i < projectsItem.length; i++) {
+
+  projectsItem[i].addEventListener("click", function () {
+    const imgSrc = this.querySelector("[data-projects-img]").src;
+    const title = this.querySelector("[data-projects-title]").innerHTML;
+    const made = this.querySelector("[data-projects-made]").innerHTML;
+    const time = this.querySelector("[data-projects-time]").innerHTML;
+    const text = this.querySelector("[data-projects-text]").innerHTML;
+
+    modalProjectsImg.src = imgSrc;
+    modalProjectsTitle.innerHTML = title;
+    modalProjectsMade.innerHTML = made;
+    modalProjectsTime.innerHTML = time;
+    modalProjectsText.innerHTML = text;
+
+    projectsModalFunc();
+
+  });
+
+}
+
+// add click event to modal close button
+modalProjectsCloseBtn.addEventListener("click", projectsModalFunc);
+modalProjectsOverlay.addEventListener("click", projectsModalFunc);
+
 
 // custom select variables
 const select = document.querySelector("[data-select]");

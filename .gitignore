@@ -1,0 +1,20 @@
+# Ignora file packate
+package.json
+package-lock.json
+
+# Ignora file di configurazione Prettier (se non vuoi versionarli)
+.prettierrc
+.prettierrc.json
+.prettierrc.yml
+.prettierrc.yaml
+.prettierrc.js
+.prettierrc.cjs
+.prettier.config.js
+.prettier.config.cjs
+
+# Ignora file Prettier temporanei o cache (opzionale)
+.prettierignore
+.prettiercache
+
+# Ignora Prettier se installato localmente
+node_modules/

@@ -1,1256 +1,1480 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tullio Gulì - Game developer</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tullio Gulì - Game developer</title>
-
-  <!--
+    <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
+    <!--
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
+    <!--
     - google font link
   -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
-
-  <!--
+  <body>
+    <!--
     - #MAIN
   -->
 
-  <main>
-
-    <!--
+    <main>
+      <!--
       - #SIDEBAR
     -->
 
-    <aside class="sidebar" data-sidebar>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/my-avatar.jpg"
+              alt="Tullio Gulì"
+              width="80"
+            />
+          </figure>
 
-      <div class="sidebar-info">
+          <div class="info-content">
+            <h1 class="name" title="Tullio Gulì">Tullio Gulì</h1>
 
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.jpg" alt="Tullio Gulì" width="80">
-        </figure>
+            <p class="title">Game developer</p>
+          </div>
 
-        <div class="info-content">
-          <h1 class="name" title="Tullio Gulì">Tullio Gulì</h1>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-          <p class="title">Game developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:gulitullio@gmail.com" class="contact-link"
+                  >gulitullio@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
 
-          <li class="contact-item">
+                <a href="tel:+393926459079" class="contact-link"
+                  >+39 3926459079</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Birthday</p>
 
-              <a href="mailto:gulitullio@gmail.com" class="contact-link">gulitullio@gmail.com</a>
-            </div>
+                <time datetime="1982-06-23">July 6, 1986</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
+                <address>Perugia, Italy</address>
+              </div>
+            </li>
+          </ul>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
+          <div class="separator"></div>
+        </div>
+      </aside>
 
-              <a href="tel:+393926459079" class="contact-link">+39 3926459079</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">July 6, 1986</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Perugia, Italy</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-
-        <div class="separator"></div>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
+      <!--
       - #main-content
     -->
 
-    <div class="main-content">
-
-      <!--
+      <div class="main-content">
+        <!--
         - #NAVBAR
       -->
 
-      <nav class="navbar">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-        <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Skills</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Skills</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Links</button>
-          </li>
-      <!--
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Links</button>
+            </li>
+            <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
       -->
-        </ul>
+          </ul>
+        </nav>
 
-      </nav>
-
-
-
-
-
-      <!--
+        <!--
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I've been playing with the idea of becoming a game developer probably since I was a child and my father
-            bought a Commodor64 spending time to copy and compile code from magazines of the time.
-          </p>
-
-          <p>
-            After doing my Computer Science degree at University of Perugia I found that getting into the game industry
-            was far more difficult that I had originally imagined, especially in Italy.
-          </p>
-
-          <p>
-            Using tools like Microsoft XNA, Unity or Unreal Engine it became simpler and over the years I realized many
-            personal project having the aim to strengthen my skills.
-          </p>
-
-          <p>
-            I moved to Ireland and I lived in Dublin for two years to improve my english but without the opportunity to
-            enter in the professional world of videogames.
-          </p>
-
-          <p>
-            The opportunity came where I would never expect it... in Italy.<br>
-            I worked for 3 years in WhatWapp, one of the most important mobile video game companies in Italy, where I
-            was part of several projects and where I learned a lot on a professional level.
-          </p>
-
-          <p>
-            And here we are, trying something new to help me grow further.
-          </p>
-
-          <section class="links-text">
+          <section class="about-text">
             <p>
-              <a href="./assets/pdf/CV Tullio Guli (2025).pdf" target="_blank">CV Tullio Guli (2025).pdf</a>
+              I've been playing with the idea of becoming a game developer
+              probably since I was a child and my father bought a Commodor64
+              spending time to copy and compile code from magazines of the time.
             </p>
+
+            <p>
+              After doing my Computer Science degree at University of Perugia I
+              found that getting into the game industry was far more difficult
+              that I had originally imagined, especially in Italy.
+            </p>
+
+            <p>
+              Using tools like Microsoft XNA, Unity or Unreal Engine it became
+              simpler and over the years I realized many personal project having
+              the aim to strengthen my skills.
+            </p>
+
+            <p>
+              I moved to Ireland and I lived in Dublin for two years to improve
+              my english but without the opportunity to enter in the
+              professional world of videogames.
+            </p>
+
+            <p>
+              The opportunity came where I would never expect it... in Italy.<br />
+              I worked for 3 years in WhatWapp, one of the most important mobile
+              video game companies in Italy, where I was part of several
+              projects and where I learned a lot on a professional level.
+            </p>
+
+            <p>
+              And here we are, trying something new to help me grow further.
+            </p>
+
+            <section class="links-text">
+              <p>
+                <a href="./assets/pdf/CV Tullio Guli (2025).pdf" target="_blank"
+                  >CV Tullio Guli (2025).pdf</a
+                >
+              </p>
+            </section>
           </section>
-        </section>
 
-
-
-        
-        <!--
-          - service
-        -->
-        <!--
-        <section class="service">
-
-          <h3 class="h3 service-title">Featured Projects</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/svg/icon-dev.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Don't Die! Zombie</h4>
-
-                <p class="service-item-text">
-                  Unity (C#), Dec 2022
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/svg/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">StarBugs</h4>
-
-                <p class="service-item-text">
-                  Unity (C#), Sep 2022
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/svg/icon-dev.svg" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Summoners War Rune</h4>
-
-                <p class="service-item-text">
-                  Unity (C#), Jul 2022
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/svg/icon-dev.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Roomies (48h)</h4>
-
-                <p class="service-item-text">
-                  Unity (C#), Jan 2019
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/svg/icon-dev.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Why are you running?</h4>
-
-                <p class="service-item-text">
-                  Unity (C#), Apr 2018
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-      -->
-
-
-        <!--
+          <!--
           - Preview Projects
         -->
 
-        <section class="testimonials">
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Thesis statement</h3>
 
-          <h3 class="h3 testimonials-title">Thesis statement</h3>
+            <ul>
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Interior design software thesis
+                  </h4>
 
-          <ul>
+                  <iframe
+                    width="320"
+                    height="160"
+                    src="https://www.youtube.com/embed/3-1qUrz80BI?si=Gq0ewh8UH59rRrLk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                  <br />
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      At University of Perugia I developed a Java 3D project
+                      called “interior design software” where it is possible to
+                      plan any room of the house. <u>More</u>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Interior design software thesis</h4>
+          <!--
+          - testimonials modal
+        -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-                <iframe width="320" height="160" src="https://www.youtube.com/embed/3-1qUrz80BI?si=Gq0ewh8UH59rRrLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
+            <section class="content-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-                <div class="testimonials-text" data-testimonials-text>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>
+                  Interior design software thesis
+                </h4>
+
+                <time>2009 - 2010</time>
+
+                <br />
+                <iframe
+                  width="620"
+                  height="300"
+                  src="https://www.youtube.com/embed/3-1qUrz80BI?si=Gq0ewh8UH59rRrLk"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+                <br /><br />
+
+                <div data-modal-text>
                   <p>
-                    At University of Perugia I developed a Java 3D project called “interior design software” where it
-                    is possible to plan any room of the house. <u>More</u>
+                    At University of Perugia I developed a Java 3D project
+                    called “interior design software” where it is possible to
+                    plan any room of the house. The user can also add additional
+                    furniture to the plan and in real time the software renders
+                    the room with the added components.
                   </p>
                 </div>
 
+                <section class="links-text">
+                  <p>
+                    <br />
+                    <a
+                      href="./assets/pdf/Interior design software thesis.pdf"
+                      target="_blank"
+                      >Interior design software thesis.pdf</a
+                    >
+                  </p>
+                </section>
               </div>
-            </li>
-
-          </ul>
-
-        </section>
-
+            </section>
+          </div>
+        </article>
 
         <!--
-          - testimonials modal
-        -->
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Interior design software thesis</h4>
-
-              <time>2009 - 2010</time>
-
-              <br>
-              <iframe width="620" height="300" src="https://www.youtube.com/embed/3-1qUrz80BI?si=Gq0ewh8UH59rRrLk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-              <br><br>
-
-              <div data-modal-text>
-                <p>
-                  At University of Perugia I developed a Java 3D project called “interior design software” where it
-                  is possible to plan any room of the house. The user can also add additional furniture to the plan and
-                  in real time the software renders the room with the added components.
-                </p>
-              </div>
-
-
-
-              <section class="links-text">
-                <p><br>
-                  <a href="./assets/pdf/Interior design software thesis.pdf" target="_blank">Interior design software thesis.pdf</a>
-                </p>
-              </section>
-
-            </div>
-          </section>
-
-
-        </div>
-
-
-        </section>
-
-      </article>
-
-
-      <!--
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Career History</h3>
             </div>
 
-            <h3 class="h3">Career History</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Gamindo</h4>
+                <h4 class="h4 timeline-item-subtitle">
+                  Game developer, Full remote, Perugia, Italy
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2023 - 2025</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  Gamindo ia a company that develops video games for brands
+                  whose goal is to bring video games to every company in the
+                  world.<br />
+                  <br />Main roles:<br />
+                  - Implementation of new games and products in Thunder, a
+                  proprietary framework<br />
+                  <br />Main projects:<br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://www.gamindo.com/authoring-gamification-learning/"
+                    >Gamindo Builder</a
+                  ><br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://www.gamindo.com/cybersecurity-awareness-training/"
+                    >Cyber Shield</a
+                  ><br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://www.gamindo.com/multiplayer-employee-engagement-games/"
+                    >PlayJam</a
+                  ><br />
+                </p>
+              </li>
 
-              <h4 class="h4 timeline-item-title">Gamindo</h4>
-              <h4 class="h4 timeline-item-subtitle">Game developer, Full remote, Perugia, Italy</h4>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">High Stone Games</h4>
+                <h4 class="h4 timeline-item-subtitle">
+                  Game developer, Full remote, Perugia, Italy
+                </h4>
 
-              <span>2023 - 2025</span>
+                <span>2022</span>
 
-              <p class="timeline-text">
-                Gamindo ia a company that develops video games for brands whose goal is to bring video games to every
-                company in the world.<br>
-                <br>Main roles:<br>
-                - Implementation of new games and products in Thunder, a proprietary framework<br>
-                <br>Main projects:<br>
-                - <a target="_blank" href="https://www.gamindo.com/authoring-gamification-learning/">Gamindo
-                  Builder</a><br>
-                - <a target="_blank" href="https://www.gamindo.com/cybersecurity-awareness-training/">Cyber
-                  Shield</a><br>
-                - <a target="_blank"
-                  href="https://www.gamindo.com/multiplayer-employee-engagement-games/">PlayJam</a><br>
-              </p>
+                <p class="timeline-text">
+                  High Stone Games is a small independent Italian studio. Their
+                  preferred gameplay style is 2D with cartoon graphics,
+                  fast-paced gameplay, and is primarily developed in Unity.<br />
+                  With them, I developed Star Bugs, a universe full of
+                  fascinating creatures born of the desire to create a new and
+                  fun way to interact with collectible NFTs.<br />
+                  The gameplay, based on idle mechanics and turn-based card
+                  games, allows the user to breed, collect and fight their
+                  insects in a real internal ecosystem.<br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://highstonegames.com/games/star_bugs/"
+                    >StarBugs</a
+                  ><br />
+                </p>
+              </li>
 
-            </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">WhatWapp Entertainment</h4>
+                <h4 class="h4 timeline-item-subtitle">
+                  Game developer, Milan, Italy
+                </h4>
 
-            <li class="timeline-item">
+                <span>2018 - 2021</span>
 
-              <h4 class="h4 timeline-item-title">High Stone Games</h4>
-              <h4 class="h4 timeline-item-subtitle">Game developer, Full remote, Perugia, Italy</h4>
+                <p class="timeline-text">
+                  WhatWapp is the leading mobile gaming company in Italy, born
+                  in 2013 out of the minds of two university students, today we
+                  count millions of active users every month and growing.<br />
+                  <br />Main roles:<br />
+                  - Implementation of new features in Unity and C# (Client),<br />Typescript
+                  and Gamesparks (Server)<br />
+                  - Maintenance and improvement of existing code<br />
+                  <br />Main projects:<br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.WhatWapp.Skat"
+                    >Skat</a
+                  ><br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.WhatWapp.BingoTown"
+                    >Bingo Town</a
+                  ><br />
+                  -
+                  <a
+                    target="_blank"
+                    href="https://play.google.com/store/apps/details?id=com.WhatWapp.Tressette"
+                    >Tressette</a
+                  ><br />
+                </p>
+              </li>
 
-              <span>2022</span>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">3dcadsof</h4>
+                <h4 class="h4 timeline-item-subtitle">
+                  Software engineer, Dublin, Ireland
+                </h4>
 
-              <p class="timeline-text">
-                High Stone Games is a small independent Italian studio. Their preferred gameplay style is 2D with cartoon graphics, fast-paced gameplay, and is primarily developed in Unity.<br>
-                With them, I developed Star Bugs, a universe full of fascinating creatures born of the desire to create a new and fun way to interact with collectible NFTs.<br>
-                The gameplay, based on idle mechanics and turn-based card games, allows the user to breed, collect and fight their insects in a real internal ecosystem.<br>
-                - <a target="_blank" href="https://highstonegames.com/games/star_bugs/">StarBugs</a><br>
-              </p>
+                <span>2017 - 2018</span>
 
-            </li>
+                <p class="timeline-text">
+                  3dcadsoft develops a custom web-enabled CAD software for the
+                  fitted furniture market. By combining an easy to use sales
+                  design tool with integrated costing, 3d visualization and
+                  manufacturing components.<br />
+                  <br />Main roles:<br />
+                  - Design and implementation of new features in C++<br />
+                  - Maintenance and improvement of existing code<br />
+                  - Translate requirements into design and implementation<br />
+                  - Added and improved VR features<br />
+                </p>
+              </li>
 
-            <li class="timeline-item">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">NewCom</h4>
+                <h4 class="h4 timeline-item-subtitle">Perugia, Italy</h4>
 
-              <h4 class="h4 timeline-item-title">WhatWapp Entertainment</h4>
-              <h4 class="h4 timeline-item-subtitle">Game developer, Milan, Italy</h4>
+                <span>2017 - 2018</span>
 
-              <span>2018 - 2021</span>
+                <p class="timeline-text">
+                  NewCom is a company specialised in digital community services
+                  for websites and mobile markets. I worked in a team, with
+                  several tasks and duties with a view to developing front/back
+                  end systems for web and mobile markets. These roles covered
+                  the whole life-cycle of software from the early design right
+                  through to the ultimate deployment, use and maintenance.<br />
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <p class="timeline-text">
-                WhatWapp is the leading mobile gaming company in Italy, born in 2013 out of the minds of two university
-                students, today we count millions of active users every month and growing.<br>
-                <br>Main roles:<br>
-                - Implementation of new features in Unity and C# (Client),<br>Typescript and Gamesparks (Server)<br>
-                - Maintenance and improvement of existing code<br>
-                <br>Main projects:<br>
-                - <a target="_blank" href="https://play.google.com/store/apps/details?id=com.WhatWapp.Skat">Skat</a><br>
-                - <a target="_blank" href="https://play.google.com/store/apps/details?id=com.WhatWapp.BingoTown">Bingo
-                  Town</a><br>
-                - <a target="_blank"
-                  href="https://play.google.com/store/apps/details?id=com.WhatWapp.Tressette">Tressette</a><br>
-              </p>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">3dcadsof</h4>
-              <h4 class="h4 timeline-item-subtitle">Software engineer, Dublin, Ireland</h4>
-
-              <span>2017 - 2018</span>
-
-              <p class="timeline-text">
-                3dcadsoft develops a custom web-enabled CAD software for the fitted furniture market.
-                By combining an easy to use sales design tool with integrated costing, 3d visualization and
-                manufacturing components.<br>
-                <br>Main roles:<br>
-                - Design and implementation of new features in C++<br>
-                - Maintenance and improvement of existing code<br>
-                - Translate requirements into design and implementation<br>
-                - Added and improved VR features<br>
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">NewCom</h4>
-              <h4 class="h4 timeline-item-subtitle">Perugia, Italy</h4>
-
-              <span>2017 - 2018</span>
-
-              <p class="timeline-text">
-                NewCom is a company specialised in digital community services for websites and mobile markets.
-                I worked in a team, with several tasks and duties with a view to developing front/back end systems for
-                web and mobile
-                markets. These roles covered the whole life-cycle of software from the early design right through to the
-                ultimate
-                deployment, use and maintenance.<br>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Personal Experience</h3>
             </div>
 
-            <h3 class="h3">Personal Experience</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Psycho Games Studios</h4>
 
-          <ol class="timeline-list">
+                <span>2012 - 2014</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  A club for passionate developers which I took part for some
+                  years enabling me to learn how coordinate people interacting
+                  among different teams. The team was divided into coders, 3d
+                  artists and illustrators with the aim to develop video-game
+                  software and to acquire know-how. Every year a 48H event was
+                  planned in order to create a full video-game with simple
+                  graphic mechanics in 48 hours. At the beginning the projects
+                  were made in C++ with opengl libs and then in XNA framework.
+                  Finally the association switched to Unity3d engine and wysiwyg
+                  tools.
+                </p>
+              </li>
+            </ol>
+          </section>
 
-              <h4 class="h4 timeline-item-title">Psycho Games Studios</h4>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-              <span>2012 - 2014</span>
-
-              <p class="timeline-text">
-                A club for passionate developers which I took part for some years enabling me to learn how coordinate
-                people interacting
-                among different teams. The team was divided into coders, 3d artists and illustrators with the aim to
-                develop video-game
-                software and to acquire know-how.
-                Every year a 48H event was planned in order to create a full video-game with simple graphic mechanics in
-                48 hours.
-                At the beginning the projects were made in C++ with opengl libs and then in XNA framework. Finally the
-                association
-                switched to Unity3d engine and wysiwyg tools.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Bachelor's Degreee, Università degli studi di Perugia
+                </h4>
+                <h4 class="h4 timeline-item-subtitle">
+                  Interior design software thesis (Java 3D)
+                </h4>
 
-          <ol class="timeline-list">
+                <span>2007 - 2011</span>
 
-            <li class="timeline-item">
+                <p class="timeline-text">
+                  I developed a Java 3D project called “interior design
+                  software” where it is possible to plan any room of the house.
+                  The user can also add additional furniture to the plan and in
+                  real time the software renders the room with the added
+                  components.
+                </p>
+              </li>
+            </ol>
+          </section>
+        </article>
 
-              <h4 class="h4 timeline-item-title">Bachelor's Degreee, Università degli studi di Perugia</h4>
-              <h4 class="h4 timeline-item-subtitle">Interior design software thesis (Java 3D)</h4>
-
-              <span>2007 - 2011</span>
-
-              <p class="timeline-text">
-                I developed a Java 3D project called “interior design software” where it is possible to plan any room of
-                the house.
-                The user can also add additional furniture to the plan and in real time the software renders the room
-                with the added components.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
-
-      <!--
+        <!--
         - #SKILLS
       -->
 
-      <article class="skills" data-page="skills">
+        <article class="skills" data-page="skills">
+          <header>
+            <h2 class="h2 article-title">Skills</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Skills</h2>
-        </header>
+          <section class="skills-text">
+            <h2>About software development</h2>
+            <ul>
+              <li>Experience client side with C#, C++</li>
+              <li>Experience server side with Typescript and Javascript</li>
+              <li>
+                Experience with game development platform such as Unity and
+                familiar with Unreal Engine
+              </li>
+              <li>
+                Experience with game data service like GameSparks or Beamable
+              </li>
+              <li>
+                Experience with mobile technologies: Android, Intel XDK Cordova
+                (Hybrid Apps)
+              </li>
+              <li>Experience with Git and SVN</li>
+              <li>Familiar with Microsoft XNA and .NET, iOS and OpenGL</li>
+            </ul>
+            <hr />
+            <h2>About website development</h2>
+            <ul>
+              <li>
+                UI development experience using HTML5, CSS3, JQuery and Ajax
+              </li>
+              <li>
+                Experience with PHP and open source frameworks such as Drupal or
+                Wordpress
+              </li>
+              <li>Experience with PHP RESTful web service</li>
+              <li>
+                Knowledge of database systems like MySQL and familiar with SQL
+                Server
+              </li>
+              <li>Familiar with Bootstrap and AngularJS</li>
+            </ul>
+            <hr />
+            <h2>Personal skill</h2>
+            <ul>
+              <li>
+                Highly passionate to develop and deliver games for any genre
+              </li>
+              <li>Analytical, problem solving and organizational skills</li>
+              <li>
+                Always open to other ideas in order to achieve the best solution
+                as part of the team
+              </li>
+              <li>Ability to learn and investigate new areas independently</li>
+              <li>
+                Willing to expand my knowledge base and acquire new skills
+              </li>
+            </ul>
+          </section>
 
-        <section class="skills-text">
-          <h2>About software development</h2>
-          <ul>
-            <li>Experience client side with C#, C++</li>
-            <li>Experience server side with Typescript and Javascript</li>
-            <li>Experience with game development platform such as Unity and familiar with Unreal Engine</li>
-            <li>Experience with game data service like GameSparks or Beamable</li>
-            <li>Experience with mobile technologies: Android, Intel XDK Cordova (Hybrid Apps)</li>
-            <li>Experience with Git and SVN</li>
-            <li>Familiar with Microsoft XNA and .NET, iOS and OpenGL</li>
-          </ul>
-          <hr>
-          <h2>About website development</h2>
-          <ul>
-            <li>UI development experience using HTML5, CSS3, JQuery and Ajax</li>
-            <li>Experience with PHP and open source frameworks such as Drupal or Wordpress</li>
-            <li>Experience with PHP RESTful web service</li>
-            <li>Knowledge of database systems like MySQL and familiar with SQL Server</li>
-            <li>Familiar with Bootstrap and AngularJS</li>
-          </ul>
-          <hr>
-          <h2>Personal skill</h2>
-          <ul>
-            <li>Highly passionate to develop and deliver games for any genre</li>
-            <li>Analytical, problem solving and organizational skills</li>
-            <li>Always open to other ideas in order to achieve the best solution as part of the team</li>
-            <li>Ability to learn and investigate new areas independently</li>
-            <li>Willing to expand my knowledge base and acquire new skills</li>
-          </ul>
+          <br />
+          <hr />
+          <br />
 
-        </section>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
 
-        <br><hr><br>
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Unity (C#)</h5>
+                </div>
 
-        <section class="skill">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%"></div>
+                </div>
+              </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">C++</h5>
+                </div>
 
-          <h3 class="h3 skills-title">My skills</h3>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-          <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Typescript</h5>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Unity (C#)</h5>
-              </div>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">GameSparks</h5>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Beamable</h5>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Typescript</h5>
-              </div>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">
+                    Website development (HTML5, CSS3, PHP, Javascript, JQuery,
+                    Ajax, MySQL)
+                  </h5>
+                </div>
 
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
 
-            </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Unreal Engine</h5>
+                </div>
 
-            <li class="skills-item">
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 25%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-              <div class="title-wrapper">
-                <h5 class="h5">Beamable</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">GameSparks</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Website development (HTML5, CSS3, PHP, Javascript, JQuery, Ajax, MySQL)</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">C++</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Unreal Engine</h5>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 25%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-      <!--
+        <!--
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Games Published</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Experiments and Tools</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Modding</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>48H</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Games Published</button>
+              <li class="filter-item">
+                <button data-filter-btn>Games Published</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Experiments and Tools</button>
+              <li class="filter-item">
+                <button data-filter-btn>Experiments and Tools</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Modding</button>
+              <li class="filter-item">
+                <button data-filter-btn>Modding</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>48H</button>
+              <li class="filter-item">
+                <button data-filter-btn>48H</button>
               </li>
-
             </ul>
 
-          </div>
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
 
-          <ul class="project-list">
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-            <!--
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Games Published</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Experiments and Tools</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Modding</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>48H</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <!--
               - games published
             -->
 
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/projects/game-published/dont-die.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                  <img src="./assets/projects/game-published/dont-die.jpg" alt="Don't Die! Zombie Survival"
-                    loading="lazy">
-                </figure>
+                  <h3 class="project-title" data-projects-title>
+                    Roomies (48h)
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Dec 2022</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <h3 class="project-title">Don't Die! Zombie Survival</h3>
-                <h4 class="project-subtitle">Unity (C#) <span>Dec 2022</span></h4>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-                <p class="project-category">Games Published</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/projects/game-published/starbugs.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
+                  <h3 class="project-title" data-projects-title>StarBugs</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Sep 2022</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-                  <img src="./assets/projects/game-published/starbugs.jpg" alt="StarBugs" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">StarBugs</h3>
-                <h4 class="project-subtitle">Unity (C#) <span>Sep 2022</span></h4>
+                    <img
+                      src="./assets/projects/game-published/skat.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                <p class="project-category">Games Published</p>
+                  <h3 class="project-title" data-projects-title>Skat</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#), Beamable
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Nov 2021</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-              </a>
-            </li>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/projects/game-published/bingo-town.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                  <img src="./assets/projects/game-published/skat.jpg" alt="Skat" loading="lazy">
-                </figure>
+                  <h3 class="project-title" data-projects-title>Bingo Town</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#), GameSparks
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Nov 2020</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <h3 class="project-title">Skat</h3>
-                <h4 class="project-subtitle">Unity (C#), Beamable <span>Nov 2021</span></h4>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-                <p class="project-category">Games Published</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/projects/game-published/blackjack.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
+                  <h3 class="project-title" data-projects-title>BlackJack</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#), GameSparks
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Feb 2020</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-                  <img src="./assets/projects/game-published/bingo-town.jpg" alt="Bingo Town" loading="lazy">
-                </figure>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <h3 class="project-title">Bingo Town</h3>
-                <h4 class="project-subtitle">Unity (C#), GameSparks <span>Nov 2020</span></h4>
+                    <img
+                      src="./assets/projects/game-published/tressette.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                <p class="project-category">Games Published</p>
+                  <h3 class="project-title" data-projects-title>Tressette</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#), GameSparks
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Nov 2018</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-              </a>
-            </li>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/projects/game-published/solitaire.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                  <img src="./assets/projects/game-published/blackjack.jpg" alt="BlackJack" loading="lazy">
-                </figure>
+                  <h3 class="project-title" data-projects-title>Solitaire</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>May 2018</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <h3 class="project-title">BlackJack</h3>
-                <h4 class="project-subtitle">Unity (C#), GameSparks <span>Feb 2020</span></h4>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-                <p class="project-category">Games Published</p>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="games published"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-              </a>
-            </li>
+                    <img
+                      src="./assets/projects/game-published/why-are-you-running.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
+                  <h3 class="project-title" data-projects-title>
+                    Why are you running?
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Apr 2018</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                  <p class="project-category">Games Published</p>
+                </a>
+              </li>
 
-                  <img src="./assets/projects/game-published/tressette.jpg" alt="Tressette" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Tressette</h3>
-                <h4 class="project-subtitle">Unity (C#), GameSparks <span>Nov 2018</span></h4>
-
-                <p class="project-category">Games Published</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/projects/game-published/solitaire.jpg" alt="Solitaire" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Solitaire</h3>
-                <h4 class="project-subtitle">Unity (C#) <span>May 2018</span></h4>
-
-                <p class="project-category">Games Published</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="games published">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/projects/game-published/why-are-you-running.jpg" alt="Why are you running?"
-                    loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Why are you running?</h3>
-                <h4 class="project-subtitle">Unity (C#) <span>Apr 2018</span></h4>
-
-                <p class="project-category">Games Published</p>
-
-              </a>
-            </li>
-
-            <!--
+              <!--
               - experiments and tools
             -->
 
-            <li class="project-item  active" data-filter-item data-category="experiments and tools">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="experiments and tools"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
+                    <img
+                      src="./assets/projects/experiments-and-tools/summoners-war-rune-evaluator.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-projects-title>
+                    Summoners War Rune Evaluator
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Jul 2022</h4>
+                  <div hidden class="project-text" data-projects-text></div>
+
+                  <p class="project-category">Experiments and Tools</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="experiments and tools"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/projects/experiments-and-tools/dating-geralt.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-projects-title>
+                    Dating Geralt
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Sep 2020</h4>
+                  <div hidden class="project-text" data-projects-text>
+                    In the free time, with colleagues, we had fun creating a
+                    prototype of a visual novel based on Geralt of Rivia of The
+                    Witcher
                   </div>
 
-                  <img src="./assets/projects/experiments-and-tools/summoners-war-rune-evaluator.jpg"
-                    alt="Summoners War Rune Evaluator" loading="lazy">
-                </figure>
+                  <p class="project-category">Experiments and Tools</p>
+                </a>
+              </li>
 
-                <h3 class="project-title">Summoners War Rune Evaluator</h3>
-                <h4 class="project-subtitle">Unity (C#) <span>Jul 2022</span></h4>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="experiments and tools"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <p class="project-category">Experiments and Tools</p>
+                    <img
+                      src="./assets/projects/experiments-and-tools/2d-combat-training.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-              </a>
-            </li>
+                  <h3 class="project-title" data-projects-title>
+                    2D Combat Training
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time></h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-            <!--
+                  <p class="project-category">Experiments and Tools</p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="experiments and tools"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/projects/experiments-and-tools/the-game.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
+
+                  <h3 class="project-title" data-projects-title>The game</h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>Jul 2019</h4>
+                  <div hidden class="project-text" data-projects-text>
+                    The digital transposition of the card game. It is a game in
+                    which there are four piles of cards, two with increasing
+                    numbers from 1 to 99 and two with decreasing numbers from
+                    100 to 2. The participants try to play as many cards as
+                    possible following some simple rules, in some piles they can
+                    play only increasing cards in other only descending. The
+                    target is obstruct the opponent and not make him place more
+                    cards.
+                  </div>
+
+                  <p class="project-category">Experiments and Tools</p>
+                </a>
+              </li>
+
+              <!--
               - modding
             -->
 
-            <li class="project-item  active" data-filter-item data-category="modding">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="modding"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/projects/modding/project-zomboid-ranking.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                  <img src="./assets/projects/modding/project-zomboid-ranking.jpg" alt="Project Zomboid - Ranking"
-                    loading="lazy">
-                </figure>
+                  <h3 class="project-title" data-projects-title>
+                    Project Zomboid - Ranking
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>LUA</h4>
+                  <h4 class="project-subtitle" data-projects-time>Dec 2016</h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <h3 class="project-title">Project Zomboid - Ranking</h3>
-                <h4 class="project-subtitle">LUA <span>Dec 2016</span></h4>
+                  <p class="project-category">Modding</p>
+                </a>
+              </li>
 
-                <p class="project-category">Modding</p>
-
-              </a>
-            </li>
-
-            <!--
+              <!--
               - 48H
             -->
 
-            <li class="project-item  active" data-filter-item data-category="48h">
-              <a href="#">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="48h"
+                data-projects-item
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
 
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
+                    <img
+                      src="./assets/projects/48h/roomies.jpg"
+                      loading="lazy"
+                      data-projects-img
+                    />
+                  </figure>
 
-                  <img src="./assets/projects/48h/roomies.jpg" alt="Roomies (48h)" loading="lazy">
-                </figure>
+                  <h3 class="project-title" data-projects-title>
+                    Roomies (48h)
+                  </h3>
+                  <h4 class="project-subtitle" data-projects-made>
+                    Unity (C#)
+                  </h4>
+                  <h4 class="project-subtitle" data-projects-time>
+                    <span>Jan 2019</span>
+                  </h4>
+                  <div hidden class="project-text" data-projects-text></div>
 
-                <h3 class="project-title">Roomies (48h)</h3>
-                <h4 class="project-subtitle">Unity (C#) <span>Jan 2019</span></h4>
+                  <p class="project-category">48H</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-                <p class="project-category">48H</p>
+        <!--
+        - projects modal
+      -->
+        <div class="modal-container" data-modal-projects-container>
+          <div class="overlay" data-modal-projects-overlay></div>
 
-              </a>
-            </li>
+          <section class="content-modal">
+            <button class="modal-close-btn" data-modal-projects-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-content">
+              <figure class="modal-img">
+                <img src="" data-modal-projects-img />
+              </figure>
+              <h4 class="h3 modal-title" data-modal-projects-title>TITLE</h4>
+              <div class="modal-subtitle" data-modal-projects-made>TEXT</div>
+              <time data-modal-projects-time>TIME</time>
+              <div class="modal-text" data-modal-projects-text>TEXT</div>
+            </div>
+          </section>
+        </div>
 
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #Links
       -->
 
-      <article class="links" data-page="links">
+        <article class="links" data-page="links">
+          <header>
+            <h2 class="h2 article-title">Links</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Links</h2>
-        </header>
+          <section class="links-text">
+            <h2>Manage projects and teams</h2>
+            <p>
+              Jira<br />
+              <a href="https://www.atlassian.com/software/jira" target="_blank"
+                >https://www.atlassian.com/software/jira</a
+              >
+            </p>
+            <p>
+              Asana<br />
+              <a href="https://asana.com/" target="_blank"
+                >https://asana.com/</a
+              >
+            </p>
+            <hr />
+            <h2>Version control system</h2>
+            <p>
+              Git<br />
+              <a href="https://github.com/" target="_blank"
+                >https://github.com/</a
+              >
+            </p>
+            <p>
+              BitBucket<br />
+              <a href="https://bitbucket.org/product/" target="_blank"
+                >https://bitbucket.org/product/</a
+              >
+            </p>
+            <hr />
+            <h2>Game Servers and LiveOps platforms</h2>
+            <p>
+              Amazon GameSparks<br />
+              <a href="https://aws.amazon.com/it/gamesparks/" target="_blank"
+                >https://aws.amazon.com/it/gamesparks/</a
+              >
+            </p>
+            <p>
+              Beamable<br />
+              <a href="https://beamable.com/" target="_blank"
+                >https://beamable.com/</a
+              >
+            </p>
+            <p>
+              Beamable Documentation<br />
+              <a href="https://docs.beamable.com/docs" target="_blank"
+                >https://docs.beamable.com/docs</a
+              >
+            </p>
+            <hr />
+            <h2>Development platforms</h2>
+            <p>
+              Unity<br />
+              <a href="https://unity.com/" target="_blank"
+                >https://unity.com/</a
+              >
+            </p>
+            <p>
+              Unity Asset Store<br />
+              <a href="https://assetstore.unity.com/" target="_blank"
+                >https://assetstore.unity.com/</a
+              >
+            </p>
+            <p>
+              Unity Documentation<br />
+              <a
+                href="https://docs.unity3d.com/Manual/index.html"
+                target="_blank"
+                >https://docs.unity3d.com/Manual/index.html</a
+              >
+            </p>
+            <p>
+              Unreal Engine<br />
+              <a href="https://www.unrealengine.com/" target="_blank"
+                >https://www.unrealengine.com/</a
+              >
+            </p>
+            <p>
+              Unreal Engine Documentation<br />
+              <a
+                href="https://docs.unrealengine.com/latest/INT/"
+                target="_blank"
+                >https://docs.unrealengine.com/latest/INT/</a
+              >
+            </p>
+            <hr />
+            <h2>Utility and Tools</h2>
+            <p>
+              Regular Expression<br />
+              <a href="https://regex101.com/" target="_blank"
+                >https://regex101.com/</a
+              >
+            </p>
+            <hr />
+            <h2>Courses and Tutorials</h2>
+            <p>
+              Online Courses<br />
+              <a href="https://www.udemy.com/" target="_blank"
+                >https://www.udemy.com/</a
+              >
+            </p>
+            <p>
+              Code Academy<br />
+              <a href="https://www.codecademy.com/" target="_blank"
+                >https://www.codecademy.com/</a
+              >
+            </p>
+            <p>
+              Typescript<br />
+              <a href="https://www.typescriptlang.org/" target="_blank"
+                >https://www.typescriptlang.org/</a
+              >
+            </p>
+            <p>
+              General information about the C++<br />
+              <a href="http://www.cplusplus.com/" target="_blank"
+                >http://www.cplusplus.com/</a
+              >
+            </p>
+            <p>
+              Tutorials<br />
+              <a href="https://www.w3schools.com/" target="_blank"
+                >https://www.w3schools.com/</a
+              >
+            </p>
+            <hr />
+            <h2>English</h2>
+            <p>
+              Fluentify<br />
+              <a href="https://www.fluentify.com/" target="_blank"
+                >https://www.fluentify.com/</a
+              >
+            </p>
+            <p>
+              Preply<br />
+              <a href="https://preply.com/" target="_blank"
+                >https://preply.com/</a
+              >
+            </p>
+            <p>
+              TED Talks<br />
+              <a href="https://www.ted.com/talks" target="_blank"
+                >https://www.ted.com/talks</a
+              >
+            </p>
+          </section>
+        </article>
 
-        <section class="links-text">
-          <h2>Manage projects and teams</h2>
-          <p>
-            Jira<br>
-            <a href="https://www.atlassian.com/software/jira" target="_blank">https://www.atlassian.com/software/jira</a>
-          </p>
-          <p>
-            Asana<br>
-            <a href="https://asana.com/" target="_blank">https://asana.com/</a>
-          </p>
-          <hr>
-          <h2>Version control system</h2>
-          <p>
-            Git<br>
-            <a href="https://github.com/" target="_blank">https://github.com/</a>
-          </p>
-          <p>
-            BitBucket<br>
-            <a href="https://bitbucket.org/product/" target="_blank">https://bitbucket.org/product/</a>
-          </p>
-          <hr>
-          <h2>Game Servers and LiveOps platforms</h2>
-          <p>
-            Amazon GameSparks<br>
-            <a href="https://aws.amazon.com/it/gamesparks/" target="_blank">https://aws.amazon.com/it/gamesparks/</a>
-          </p>
-          <p>
-            Beamable<br>
-            <a href="https://beamable.com/" target="_blank">https://beamable.com/</a>
-          </p>
-          <p>
-            Beamable Documentation<br>
-            <a href="https://docs.beamable.com/docs" target="_blank">https://docs.beamable.com/docs</a>
-          </p>
-          <hr>
-          <h2>Development platforms</h2>
-          <p>
-            Unity<br>
-            <a href="https://unity.com/" target="_blank">https://unity.com/</a>
-          </p>
-          <p>
-            Unity Asset Store<br>
-            <a href="https://assetstore.unity.com/" target="_blank">https://assetstore.unity.com/</a>
-          </p>
-          <p>
-            Unity Documentation<br>
-            <a href="https://docs.unity3d.com/Manual/index.html"
-              target="_blank">https://docs.unity3d.com/Manual/index.html</a>
-          </p>
-          <p>
-            Unreal Engine<br>
-            <a href="https://www.unrealengine.com/" target="_blank">https://www.unrealengine.com/</a>
-          </p>
-          <p>
-            Unreal Engine Documentation<br>
-            <a href="https://docs.unrealengine.com/latest/INT/"
-              target="_blank">https://docs.unrealengine.com/latest/INT/</a>
-          </p>
-          <hr>
-          <h2>Utility and Tools</h2>
-          <p>
-            Regular Expression<br>
-            <a href="https://regex101.com/" target="_blank">https://regex101.com/</a>
-          </p>
-          <hr>
-          <h2>Courses and Tutorials</h2>
-          <p>
-            Online Courses<br>
-            <a href="https://www.udemy.com/" target="_blank">https://www.udemy.com/</a>
-          </p>
-          <p>
-            Code Academy<br>
-            <a href="https://www.codecademy.com/" target="_blank">https://www.codecademy.com/</a>
-          </p>
-          <p>
-            Typescript<br>
-            <a href="https://www.typescriptlang.org/" target="_blank">https://www.typescriptlang.org/</a>
-          </p>
-          <p>
-            General information about the C++<br>
-            <a href="http://www.cplusplus.com/" target="_blank">http://www.cplusplus.com/</a>
-          </p>
-          <p>
-            Tutorials<br>
-            <a href="https://www.w3schools.com/" target="_blank">https://www.w3schools.com/</a>
-          </p>
-          <hr>
-          <h2>English</h2>
-          <p>
-            Fluentify<br>
-            <a href="https://www.fluentify.com/" target="_blank">https://www.fluentify.com/</a>
-          </p>
-          <p>
-            Preply<br>
-            <a href="https://preply.com/" target="_blank">https://preply.com/</a>
-          </p>
-          <p>
-            TED Talks<br>
-            <a href="https://www.ted.com/talks" target="_blank">https://www.ted.com/talks</a>
-          </p>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d747123.4633433807!2d11.91868707855672!3d42.98983650707724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e99ce6f80fd7d%3A0x9c0847e0b2bf6282!2sUmbria!5e0!3m2!1sit!2sit!4v1731352496867!5m2!1sit!2sit"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </figure>
+          </section>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d747123.4633433807!2d11.91868707855672!3d42.98983650707724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132e99ce6f80fd7d%3A0x9c0847e0b2bf6282!2sUmbria!5e0!3m2!1sit!2sit!4v1731352496867!5m2!1sit!2sit"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </figure>
-        </section>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
 
-        <section class="contact-form">
+            <form action="#" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
 
-          <h3 class="h3 form-title">Contact Form</h3>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
-          <form action="#" class="form" data-form>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-  <!--
+    <!--
     - custom js link
   -->
-  <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
 
-  <!--
+    <!--
     - ionicon link
   -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

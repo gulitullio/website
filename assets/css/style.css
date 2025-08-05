@@ -675,7 +675,7 @@ main {
 
 
 /**
- * #testimonials-modal
+ * #content-modal
  */
 
 .modal-container {
@@ -723,7 +723,7 @@ main {
   pointer-events: all;
 }
 
-.testimonials-modal {
+.content-modal {
   background: var(--eerie-black-2);
   position: relative;
   padding: 15px;
@@ -737,7 +737,7 @@ main {
   z-index: 2;
 }
 
-.modal-container.active .testimonials-modal {
+.modal-container.active .content-modal {
   transform: scale(1);
   opacity: 1;
 }
@@ -775,6 +775,22 @@ main {
   box-shadow: var(--shadow-2);
 }
 
+.modal-img {
+  display: block;
+  width: 600px;
+  height: 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.modal-img img {
+  margin: auto;
+  max-width: 600px;
+  max-height: 300px;
+}
+
+
 .modal-img-wrapper>img {
   display: none;
 }
@@ -790,7 +806,21 @@ main {
   margin-bottom: 10px;
 }
 
+.modal-subtitle {
+  font-size: var(--fs-6);
+  color: var(--light-gray-70);
+  font-weight: var(--fw-300);
+  margin-bottom: 10px;
+}
+
 .modal-content p {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+}
+
+.modal-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -1699,7 +1729,7 @@ textarea.form-input::-webkit-resizer {
     padding: 20px;
   }
 
-  .testimonials-modal {
+  .content-modal {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -1889,7 +1919,7 @@ textarea.form-input::-webkit-resizer {
 
   /* testimonials modal */
 
-  .testimonials-modal {
+  .content-modal {
     gap: 35px;
     max-width: 680px;
   }
