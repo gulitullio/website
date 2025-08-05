@@ -89,7 +89,6 @@
       function includeHTML() {
         const elements = document.querySelectorAll("[data-include]")
         const fetchPromises = []
-
         elements.forEach((el) => {
           const file = el.getAttribute("data-include")
           const fetchPromise = fetch(file)
@@ -106,12 +105,38 @@
         // Quando tutti i fetch sono completati
         Promise.all(fetchPromises)
           .then(() => {
-            const script = document.createElement("script")
-            script.src = "./assets/js/script.js"
-            script.onload = () => {
-              console.log("Script caricato ed eseguito dopo tutti i fetch")
-            }
-            document.body.appendChild(script)
+            console.log("All files sections and pages are loaded")
+            const elements = document.querySelectorAll("[data-project-include]")
+            const fetchProjects = []
+            elements.forEach((el) => {
+              const file = el.getAttribute("data-project-include")
+              const fetchProject = fetch(file)
+                .then((response) => {
+                  if (response.ok) return response.text()
+                  return Promise.reject("File not found")
+                })
+                .then((data) => {
+                  el.innerHTML = data
+                })
+              fetchProjects.push(fetchProject)
+            })
+
+            Promise.all(fetchProjects)
+              .then(() => {
+                console.log("All files project are loaded")
+                const script = document.createElement("script")
+                script.src = "./assets/js/script.js"
+                script.onload = () => {
+                  console.log("Main script loaded after all fetches")
+                }
+                document.body.appendChild(script)
+              })
+              .catch((error) => {
+                console.error(
+                  "Errore durante il caricamento di uno dei file:",
+                  error,
+                )
+              })
           })
           .catch((error) => {
             console.error(
