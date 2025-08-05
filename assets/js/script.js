@@ -32,23 +32,12 @@ const testimonialsModalFunc = function () {
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
-
 // add click event to all modal items
 for (let i = 0; i < testimonialsItem.length; i++) {
-
   testimonialsItem[i].addEventListener("click", function () {
-
-    //modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    //modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    //modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    //modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
     testimonialsModalFunc();
-
   });
-
 }
-
 // add click event to modal close button
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
@@ -65,6 +54,7 @@ const modalProjectsImg = document.querySelector("[data-modal-projects-img]");
 const modalProjectsTitle = document.querySelector("[data-modal-projects-title]");
 const modalProjectsMade = document.querySelector("[data-modal-projects-made]");
 const modalProjectsTime = document.querySelector("[data-modal-projects-time]");
+const modalProjectsTeam = document.querySelector("[data-modal-projects-team]");
 const modalProjectsText = document.querySelector("[data-modal-projects-text]");
 
 // modal toggle function
@@ -81,12 +71,14 @@ for (let i = 0; i < projectsItem.length; i++) {
     const title = this.querySelector("[data-projects-title]").innerHTML;
     const made = this.querySelector("[data-projects-made]").innerHTML;
     const time = this.querySelector("[data-projects-time]").innerHTML;
+    const team = this.querySelector("[data-projects-team]").innerHTML;
     const text = this.querySelector("[data-projects-text]").innerHTML;
 
     modalProjectsImg.src = imgSrc;
     modalProjectsTitle.innerHTML = title;
     modalProjectsMade.innerHTML = made;
     modalProjectsTime.innerHTML = time;
+    modalProjectsTeam.innerHTML = team;
     modalProjectsText.innerHTML = text;
 
     projectsModalFunc();
