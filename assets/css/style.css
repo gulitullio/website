@@ -556,6 +556,10 @@ main {
   margin-bottom: 15px;
 }
 
+.about-text b {
+  font-weight: var(--fw-600);
+}
+
 /**
  * #service 
  */
@@ -735,6 +739,8 @@ main {
   opacity: 0;
   transition: var(--transition-1);
   z-index: 2;
+  max-width: 90vw;
+  max-height: 90vh;
 }
 
 .modal-container.active .content-modal {
@@ -756,6 +762,7 @@ main {
   color: var(--white-2);
   font-size: 18px;
   opacity: 0.7;
+  z-index: 99;
 }
 
 .modal-close-btn:hover,
@@ -776,9 +783,10 @@ main {
 }
 
 .modal-img {
+  position: relative;
   display: block;
-  width: 600px;
-  height: 300px;
+  max-width: 80vw;
+  max-height: 25vw;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -786,8 +794,8 @@ main {
 
 .modal-img img {
   margin: auto;
-  max-width: 600px;
-  max-height: 300px;
+  max-width: 80vw;
+  max-height: 25vw;
 }
 
 
@@ -835,6 +843,8 @@ main {
   border-top: 1px white solid;
   margin-top: 20px;
   padding-top: 20px;
+  max-height: 50vh;
+  overflow: auto;
 }
 
 
@@ -1931,7 +1941,6 @@ textarea.form-input::-webkit-resizer {
 
   .content-modal {
     gap: 35px;
-    max-width: 680px;
   }
 
   .modal-avatar-box img {
@@ -2277,4 +2286,32 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 
+}
+
+.resume a {
+  text-decoration: underline;
+  color: white;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 20vw;
+  aspect-ratio: 16 / 9; /* mantiene il rapporto */
+}
+
+@media (max-width: 900px) {
+  .video-container {
+    max-width: 50vw;  /* Mobile/tablet */
+  }
+}
+
+
+.video-container iframe {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 0;
 }
